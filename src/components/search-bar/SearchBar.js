@@ -2,8 +2,6 @@ import { Card, CardContent, TextField } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 
-
-
 const SearchBar = (props) => {
   return (
     <Card>

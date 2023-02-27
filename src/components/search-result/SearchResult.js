@@ -5,15 +5,12 @@ import useImageHook from '../../hooks/useImageHook';
 import ImageItem from '../image-item/ImageItem';
 
 const SearchResult = (props) => {
-
   const { data, setPage, page, loading } = useImageHook(props.query)
-  console.log(loading)
 
   return (<>
     <Card>
       <CardContent>
         {loading && <LinearProgress />}
-
         <CardActions style={{
           "display": "flex",
           "justifyContent": "center"

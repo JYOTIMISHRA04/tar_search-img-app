@@ -10,10 +10,12 @@ import { green, pink } from '@mui/material/colors';
 import IconButton from '@mui/material/IconButton';
 import * as React from 'react';
 
-
 export default function ImageItem(props) {
-    const { urls: { thumb, regular }, user: { name, updated_at, profile_image: { small }, social }, alt_description, likes } = props.item
-    console.log(social?.twitter_username)
+    const { urls: { thumb, regular },
+        user: { name, updated_at, profile_image: { small }, social },
+        alt_description, likes
+    } = props.item
+
     return (
         <Card sx={{ minWidth: 345, marginBottom: 10 }}>
             {props.detailedView && <CardHeader

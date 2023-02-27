@@ -1,10 +1,10 @@
 import { Box, Grid, Modal } from '@mui/material';
 import React, { useState } from 'react';
-import './App.css';
 import AppBarComponent from './components/app-bar/AppBar';
 import ImageItem from './components/image-item/ImageItem';
 import SearchBar from './components/search-bar/SearchBar';
 import SearchResult from './components/search-result/SearchResult';
+import './App.css';
 
 function App() {
   const [query, setQuery] = useState("")
