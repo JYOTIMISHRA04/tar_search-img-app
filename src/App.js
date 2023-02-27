@@ -36,6 +36,7 @@ function App() {
       <Modal
         open={open}
         onClose={handleModal}
+        className={"modal-container"}
       ><Box style={
         {
           "position": "absolute",
